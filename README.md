@@ -6,7 +6,7 @@
 - [How to Design State Feedback Linearization Controller](#how-to-design-state-feedback-linearization-controller)
     - [Calculate the Equation of Motion](#calculate-the-equation-of-motion)
     - [Design State Feedback Linearization Controller](#design-state-feedback-linearization-controller)
-- [Results](#results)
+- [Code](#code)
     - [MATLAB](#matlab)
     - [Gazebo and ROS](#gazebo-and-ros)
 - [Performance Comparision](#performance-comparision)
@@ -44,25 +44,26 @@ Calculate the equation of motion for the system using the guide [here](https://g
 
 ## Design State Feedback Linearization Controller
 
-- Design the controller of form:
-  $$
-  \begin{equation}\notag
-  \begin{bmatrix}
-  u_{1}\\u_{2}
-  \end{bmatrix}
+- Design the controller of the form:
 
-  =
+$$
+\begin{equation}\notag
+\begin{bmatrix}
+u_{1}\\u_{2}
+\end{bmatrix}
 
-  \begin{bmatrix}
-  \ddot{\theta_{1}}\\\ddot{\theta_{2}}
-  \end{bmatrix}
+=
 
-  \end{equation}
-  $$
+\begin{bmatrix}
+\ddot{\theta_{1}}\\\ddot{\theta_{2}}
+\end{bmatrix}
+
+\end{equation}
+$$
 
 - Replace $\ddot{\theta_{i}}$ with virtual input $v_{i}$ for trajectory tracking controller design.
 
-# Results
+# Code
 
 ## MATLAB
 The complete calculation has been done [here (webpage form)](https://htmlpreview.github.io/?https://github.com/parth-20-07/Trajectory-Tracking-using-State-Feedback-Linearization-Control-for-a-2-DoF-RRBot/blob/main/Solution/MATLAB/main.html) in MATLAB. The systems with the equation of motion are simulated as follows
