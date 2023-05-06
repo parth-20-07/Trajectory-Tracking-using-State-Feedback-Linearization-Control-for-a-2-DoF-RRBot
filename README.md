@@ -49,15 +49,12 @@ Calculate the equation of motion for the system using the guide [here](https://g
 $$
 \begin{equation}\notag
 \begin{bmatrix}
-  u_{1}\\
-  u_{2}
-\end{bmatrix}
-
-=
-
+u_{1}\\
+u_{2}
+\end{bmatrix}=
 \begin{bmatrix}
-  \ddot{\theta_{1}}\\
-  \ddot{\theta_{2}}
+\ddot{\theta_{1}}\\
+\ddot{\theta_{2}}
 \end{bmatrix}
 \end{equation}
 $$
